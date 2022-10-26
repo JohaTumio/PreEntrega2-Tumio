@@ -5,9 +5,94 @@
 html{
     font-size: 62.5%;
 }
+/* MOVILE FIRST */
+.t_center{
+    text-align: center;
+}
+.d_none{
+    display: none;
+}
+#body_grid{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(7, auto);
+}
 .logo{
     height: 5rem;
-    width: 8rem;
+    width: 10rem;
     margin: 0.5rem;
     border-radius: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+.container_nav_grid{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 0.5fr 1fr;
+    justify-content: space-around;
+    justify-items: center;
+    background-image: url(../img/acuarela1.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 27rem;
+    border-bottom: 2px solid rgba(29,113,168,0.58);
+}
+.container_logo_titulo{
+    display: flex;
+    align-items: center;
+}
+.lista_nav li{
+    list-style: none;
+    line-height:2;
+}
+.lista_nav li .a_nav{
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    border-radius: 23em/5em 1rem;
+    color:#91107bf5;
+}
+.card{
+    width: 150px;
+    height: 150px;
+    border-radius: 30px;
+    background: #e0e0e0;
+    box-shadow: 15px 15px 30px #bebebe,
+                -15px -15px 30px #ffffff;
+}
+h1{
+    font-family: 'Peralta', cursive;
+    margin: 5px 20px 5px 20px;
+    color: #b31a8c;
+    font-weight: normal;
+    animation: focus-in-expand-fwd 0.8s ease-in-out both;
+}
+.container_h1{
+    border-style: double;
+    color:#b31a8c;
+    padding: 1px;
+}
+@keyframes focus-in-expand-fwd {
+    0% {
+    letter-spacing: -0.5em;
+    transform: translateZ(-800px);
+    filter: blur(12px);
+    opacity: 0;
+    }
+    100% {
+    transform: translateZ(0);
+    filter: blur(0);
+    opacity: 1;
+    }
+}
+.titulo_introduccion{
+    text-align: center;
+    font-size: 2rem;
+    margin: 1rem;
+    font-family: 'Dancing Script', cursive;
+}
+.p_introduccion{
+    font-size: 1.5rem;
+    text-align:center;
+    font-family: 'Noto Serif', serif;
+    margin: 0.5rem;
 }
