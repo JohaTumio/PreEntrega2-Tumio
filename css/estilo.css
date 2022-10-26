@@ -1,6 +1,7 @@
 *{
     padding:0;
     margin:0;
+    font-family: 'Noto Serif', serif;
 }
 html{
     font-size: 62.5%;
@@ -11,6 +12,9 @@ html{
 }
 .d_none{
     display: none;
+}
+.font_initial{
+    font-family: initial;
 }
 #body_grid{
     display: grid;
@@ -86,13 +90,45 @@ h1{
 }
 .titulo_introduccion{
     text-align: center;
-    font-size: 2rem;
+    font-size: 3rem;
     margin: 1rem;
     font-family: 'Dancing Script', cursive;
 }
 .p_introduccion{
     font-size: 1.5rem;
     text-align:center;
-    font-family: 'Noto Serif', serif;
     margin: 0.5rem;
+}
+.bienvenida_p{
+    font-size: 1.5rem;
+    margin: 1rem 3rem;
+    padding: 2rem;
+    text-align: center;
+    border-style:ridge;
+    line-height: 2;
+    background-image: url(../img/fondo\ parrafo.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+    font-weight: bold;
+}
+.productos{
+    height: 15rem;
+    width: 15rem;
+    border-radius: 2rem;
+}
+.img_productos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+    row-gap: 0.5rem;
+}
+#titulo_productos{
+text-decoration: underline;
+font-size: 2rem;
+}
+.productos_p{
+    font-size: 1.5rem;
+    margin: 1rem;
 }
