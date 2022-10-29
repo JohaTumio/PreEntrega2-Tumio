@@ -75,6 +75,7 @@ h1{
     color:#b31a8c;
     padding: 1px;
 }
+/* Animacion h1 */
 @keyframes focus-in-expand-fwd {
     0% {
     letter-spacing: -0.5em;
@@ -125,10 +126,49 @@ h1{
     row-gap: 0.5rem;
 }
 #titulo_productos{
-text-decoration: underline;
-font-size: 2rem;
+    text-decoration: underline;
+    font-size: 2rem;
 }
 .productos_p{
     font-size: 1.5rem;
     margin: 1rem;
+}
+.a_productos{
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 0.5rem 0rem;
+}
+.a_productos a{
+    text-decoration: none;
+}
+.atencion_personalizada{
+    font-size: 1.5rem;
+    text-decoration:underline;
+    text-align:center;
+    margin: 1rem;
+}
+footer{
+    background-color: #888fec;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 1rem;
+}
+.red_social{
+    height: 1.5rem;
+    width: 1.5rem;
+}
+footer p{
+    font-size: 1rem;
+}
+footer div a{
+    margin: 1rem;
+}
+.lista_redes{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
 }
