@@ -55,14 +55,11 @@ html{
     padding: 0.5rem;
     border-radius: 23em/5em 1rem;
     color:#91107bf5;
-    
 }
-/* fijarse q hacer */
-.card{
-    width: 150px;
-    height: 150px;
-    border-radius: 30px;
-    background: #e0e0e0;
+.container_lista_nav{
+    background-color: #e0e0e0;;
+    border-radius: 3rem;
+    width: 12rem;
     box-shadow: 15px 15px 30px #bebebe,
                 -15px -15px 30px #ffffff;
 }
@@ -71,7 +68,20 @@ h1{
     margin: 5px 20px 5px 20px;
     color: #f0ebf0;
     font-weight: normal;
-    /* animation: focus-in-expand-fwd 0.8s ease-in-out both; */
+    animation: text-pop-up-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) reverse both;
+}
+/* animacion h1 */
+@keyframes text-pop-up-top {
+    0% {
+    transform: translateY(0);
+    transform-origin: 50% 50%;
+    text-shadow: none;
+    }
+    100%{
+    transform: translateY(-50px);
+    transform-origin: 50% 50%;
+    text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc, 0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #cccccc, 0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 50px 30px rgba(0, 0, 0, 0.3);
+    }
 }
 .container_h1{
     border-style: double;
@@ -130,7 +140,7 @@ h1{
 }
 #titulo_productos{
     text-decoration: underline;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 .productos_p{
     font-size: 1.5rem;
@@ -197,6 +207,12 @@ footer div a{
     margin: 2rem;
     -webkit-box-shadow: 3px 3px 14px 2px #757575; 
     box-shadow: 3px 3px 14px 2px #757575;
+    font-size: 1.8rem;
+}
+.container_lista_nav{
+    background-color:transparent;
+    box-shadow: none;
+    width: auto;
 }
 .titulo_introduccion{
     font-size: 5rem;
@@ -216,7 +232,6 @@ footer div a{
 .productos_p{
     font-size: 2rem;
     margin-bottom: 3rem;
-
 }
 .img_productos{
     grid-template-columns: 1fr 1fr 1fr;
@@ -239,10 +254,6 @@ footer{
 }
 footer p{
     font-size: 2rem;
+    }
 }
-
-
-
-}
-
 
