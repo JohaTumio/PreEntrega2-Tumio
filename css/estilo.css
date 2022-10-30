@@ -32,17 +32,18 @@ html{
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: 0.5fr 1fr;
-    justify-content: space-around;
     justify-items: center;
     background-image: url(../img/acuarela1.webp);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 27rem;
+    height: 23rem;
     border-bottom: 2px solid rgba(29,113,168,0.58);
 }
 .container_logo_titulo{
     display: flex;
     align-items: center;
+    width: 100%;
+    justify-content: space-around;
 }
 .lista_nav li{
     list-style: none;
@@ -54,7 +55,9 @@ html{
     padding: 0.5rem;
     border-radius: 23em/5em 1rem;
     color:#91107bf5;
+    
 }
+/* fijarse q hacer */
 .card{
     width: 150px;
     height: 150px;
@@ -66,16 +69,18 @@ html{
 h1{
     font-family: 'Peralta', cursive;
     margin: 5px 20px 5px 20px;
-    color: #b31a8c;
+    color: #f0ebf0;
     font-weight: normal;
-    animation: focus-in-expand-fwd 0.8s ease-in-out both;
+    /* animation: focus-in-expand-fwd 0.8s ease-in-out both; */
 }
 .container_h1{
     border-style: double;
-    color:#b31a8c;
+    color:#080707;
     padding: 1px;
+    background: rgb(238,174,202);
+    background: linear-gradient(108deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 50%, rgba(9,9,121,1) 97%);
 }
-/* Animacion h1 */
+/* Animacion titulo introduccion */
 @keyframes focus-in-expand-fwd {
     0% {
     letter-spacing: -0.5em;
@@ -90,21 +95,19 @@ h1{
     }
 }
 .titulo_introduccion{
-    text-align: center;
     font-size: 3rem;
     margin: 1rem;
     font-family: 'Dancing Script', cursive;
+    animation: focus-in-expand-fwd 0.8s ease-in-out both;
 }
 .p_introduccion{
     font-size: 1.5rem;
-    text-align:center;
     margin: 0.5rem;
 }
 .bienvenida_p{
     font-size: 1.5rem;
     margin: 1rem 3rem;
     padding: 2rem;
-    text-align: center;
     border-style:ridge;
     line-height: 2;
     background-image: url(../img/fondo\ parrafo.jpg);
@@ -135,7 +138,6 @@ h1{
 }
 .a_productos{
     font-size: 1.5rem;
-    text-align: center;
     margin: 0.5rem 0rem;
 }
 .a_productos a{
@@ -144,7 +146,6 @@ h1{
 .atencion_personalizada{
     font-size: 1.5rem;
     text-decoration:underline;
-    text-align:center;
     margin: 1rem;
 }
 footer{
@@ -172,3 +173,76 @@ footer div a{
     justify-content: flex-end;
     align-items: center;
 }
+/* VISTA TABLET */
+@media (min-width: 768px){
+    .container_nav_grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 1fr;
+        justify-content: space-around;
+        justify-items: center;
+        height: 12rem;
+        position: sticky;
+        top:0px;
+        z-index: 100;
+    }
+.logo{
+    display: block;
+}
+.lista_nav{
+    display: flex;
+    justify-content: center;
+}
+.lista_nav li .a_nav{
+    background-color: #aadbf7;
+    margin: 2rem;
+    -webkit-box-shadow: 3px 3px 14px 2px #757575; 
+    box-shadow: 3px 3px 14px 2px #757575;
+}
+.titulo_introduccion{
+    font-size: 5rem;
+}
+.p_introduccion{
+    font-size: 2rem;
+    margin-top: 3rem;
+}
+.bienvenida_p{
+    font-size: 2rem;
+    margin-top: 3rem;
+}
+#titulo_productos{
+    font-size: 2.8rem;
+    margin: 2rem 0rem;
+}
+.productos_p{
+    font-size: 2rem;
+    margin-bottom: 3rem;
+
+}
+.img_productos{
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 1rem;
+}
+.a_productos{
+    font-size: 2rem;
+    margin: 2rem 0rem;
+}
+.atencion_personalizada{
+    font-size: 2rem;
+}
+footer{
+    height:4rem
+}
+.red_social{
+    height: 3rem;
+    width: 3rem;
+}
+footer p{
+    font-size: 2rem;
+}
+
+
+
+}
+
+
