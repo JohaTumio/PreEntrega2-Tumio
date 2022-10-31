@@ -16,6 +16,9 @@ html{
 .font_initial{
     font-family: initial;
 }
+.font_underline{
+text-decoration: underline;
+}
 #body_grid{
     display: grid;
     grid-template-columns: auto;
@@ -135,7 +138,6 @@ h1{
     row-gap: 0.5rem;
 }
 #titulo_productos{
-    text-decoration: underline;
     font-size: 1.5rem;
 }
 .productos_p{
@@ -151,7 +153,6 @@ h1{
 }
 .atencion_personalizada{
     font-size: 1.5rem;
-    text-decoration:underline;
     margin: 1rem;
 }
 footer{
@@ -180,9 +181,6 @@ footer div a{
     align-items: center;
 }
 /* PAGINA SOBRE NOSOTROS */
-.preguntas_sobrenostros-h3{
-    font-size: 1.8rem;
-}
 .section_sobre_nosotros{
     border-style:ridge;
     margin: 1rem;
@@ -269,6 +267,10 @@ footer div a{
     footer p{
         font-size: 2rem;
     }
+    /* PAGINA SOBRE NOSOTROS */
+    .section_sobre_nosotros{
+        margin: 2.5rem;
+    }
 }
 /* VISTA DESKTOP */
 @media (min-width: 1024px){
@@ -331,5 +333,9 @@ footer div a{
     .img_productos img:hover{
         transform: scale(1.1) translateY(-40px);
         box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    }
+     /* PAGINA SOBRE NOSOTROS */
+    .section_sobre_nosotros{
+        margin: 4rem;
     }
 }
