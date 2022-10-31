@@ -270,6 +270,10 @@ footer div a{
         width: 80rem;
         height: 50rem;
     }
+    .lista_nav .a_nav:hover { 
+        background-color: #521bb9;
+        color: #70def1;
+    }
     .bienvenida{
         display: flex;
         justify-content: space-around;
@@ -304,10 +308,16 @@ footer div a{
     .a_productos{
         font-size: 3rem;
         margin: 2rem;
-    }
+    }      
     .atencion_personalizada{
         font-size: 2.3rem;
         margin: 4rem;
     }
-
+    .img_productos img{
+        transition: all .3s;
+    }
+    .img_productos img:hover{
+        transform: scale(1.1) translateY(-40px);
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    }
 }
