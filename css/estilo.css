@@ -179,6 +179,18 @@ footer div a{
     justify-content: flex-end;
     align-items: center;
 }
+/* PAGINA SOBRE NOSOTROS */
+.preguntas_sobrenostros-h3{
+    font-size: 1.8rem;
+}
+.section_sobre_nosotros{
+    border-style:ridge;
+    margin: 1rem;
+    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+    font-weight: bolder;
+    /* background-attachment: fixed; */
+}
+
 /* VISTA TABLET */
 @media (min-width: 768px){
     .container_nav_grid{
