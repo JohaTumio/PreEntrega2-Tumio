@@ -22,8 +22,8 @@ html{
     grid-template-rows: repeat(7, auto);
 }
 .logo{
-    height: 5rem;
-    width: 10rem;
+    height: 7rem;
+    width: 5rem;
     margin: 0.5rem;
     border-radius: 2rem;
     box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
@@ -31,19 +31,14 @@ html{
 .container_nav_grid{
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 0.5fr 1fr;
+    grid-template-rows: 1fr 4fr;
     justify-items: center;
+    align-items: center;
     background-image: url(../img/acuarela1.webp);
     background-repeat: no-repeat;
     background-size: cover;
     height: 23rem;
     border-bottom: 2px solid rgba(29,113,168,0.58);
-}
-.container_logo_titulo{
-    display: flex;
-    align-items: center;
-    width: 100%;
-    justify-content: space-around;
 }
 .lista_nav li{
     list-style: none;
@@ -108,6 +103,7 @@ h1{
     font-size: 3rem;
     margin: 1rem;
     font-family: 'Dancing Script', cursive;
+    color:#11226d;
     animation: focus-in-expand-fwd 0.8s ease-in-out both;
 }
 .p_introduccion{
@@ -195,65 +191,123 @@ footer div a{
         top:0px;
         z-index: 100;
     }
-.logo{
-    display: block;
-}
-.lista_nav{
-    display: flex;
-    justify-content: center;
-}
-.lista_nav li .a_nav{
-    background-color: #aadbf7;
-    margin: 2rem;
-    -webkit-box-shadow: 3px 3px 14px 2px #757575; 
-    box-shadow: 3px 3px 14px 2px #757575;
-    font-size: 1.8rem;
-}
-.container_lista_nav{
-    background-color:transparent;
-    box-shadow: none;
-    width: auto;
-}
-.titulo_introduccion{
-    font-size: 5rem;
-}
-.p_introduccion{
-    font-size: 2rem;
-    margin-top: 3rem;
-}
-.bienvenida_p{
-    font-size: 2rem;
-    margin-top: 3rem;
-}
-#titulo_productos{
-    font-size: 2.8rem;
-    margin: 2rem 0rem;
-}
-.productos_p{
-    font-size: 2rem;
-    margin-bottom: 3rem;
-}
-.img_productos{
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(2, 1fr);
-    row-gap: 1rem;
-}
-.a_productos{
-    font-size: 2rem;
-    margin: 2rem 0rem;
-}
-.atencion_personalizada{
-    font-size: 2rem;
-}
-footer{
-    height:4rem
-}
-.red_social{
-    height: 3rem;
-    width: 3rem;
-}
-footer p{
-    font-size: 2rem;
+    .container_logo_titulo{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+    }
+    .logo{
+        display: block;
+    }
+    .lista_nav{
+        display: flex;
+        justify-content: center;
+    }
+    .lista_nav li .a_nav{
+        background-color: #aadbf7;
+        margin: 2rem;
+        -webkit-box-shadow: 3px 3px 14px 2px #757575; 
+        box-shadow: 3px 3px 14px 2px #757575;
+        font-size: 1.8rem;
+    }
+    .container_lista_nav{
+        background-color:transparent;
+        box-shadow: none;
+        width: auto;
+    }
+    .titulo_introduccion{
+        font-size: 5rem;
+    }
+    .p_introduccion{
+        font-size: 2rem;
+        margin-top: 3rem;
+    }
+    .bienvenida_p{
+        font-size: 2rem;
+        margin-top: 3rem;
+    }
+    #titulo_productos{
+        font-size: 2.8rem;
+        margin: 2rem 0rem;
+    }
+    .productos_p{
+        font-size: 2rem;
+        margin-bottom: 3rem;
+    }
+    .img_productos{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        row-gap: 1rem;
+    }
+    .a_productos{
+        font-size: 2rem;
+        margin: 2rem 0rem;
+    }
+    .atencion_personalizada{
+        font-size: 2rem;
+    }
+    footer{
+        height:4rem
+    }
+    .red_social{
+        height: 3rem;
+        width: 3rem;
+    }
+    footer p{
+        font-size: 2rem;
     }
 }
+/* VISTA DESKTOP */
+@media (min-width: 1024px){
+    .container_nav_grid{
+        grid-template-columns: auto auto;
+        grid-template-rows: 1fr;
+        height: 8rem;
+    }
+    .video_bienvenida{
+        display: block;
+        width: 80rem;
+        height: 50rem;
+    }
+    .bienvenida{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .titulo_introduccion{
+        font-size: 5rem;
+        margin: 4rem;
+        border-style: dotted;
+        border-width:3px;
+    }
+    .p_introduccion{
+        font-size: 2.8rem;
+        margin: 2rem;
+    }
+    .bienvenida_p{
+        font-size: 2.8rem;
+        margin: 4rem 3rem;
+    }
 
+    #titulo_productos{
+        font-size: 4rem;
+    }
+    .productos_p{
+        font-size: 3rem;
+        margin: 5rem;
+    }
+    .img_productos{
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: auto
+    }
+    .a_productos{
+        font-size: 3rem;
+        margin: 2rem;
+    }
+    .atencion_personalizada{
+        font-size: 2.3rem;
+        margin: 4rem;
+    }
+
+}
