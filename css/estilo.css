@@ -19,6 +19,9 @@ html{
 .font_underline{
 text-decoration: underline;
 }
+.list_style_none{
+    list-style: none;
+}
 #body_grid{
     display: grid;
     grid-template-columns: auto;
@@ -44,7 +47,6 @@ text-decoration: underline;
     border-bottom: 2px solid rgba(29,113,168,0.58);
 }
 .lista_nav li{
-    list-style: none;
     line-height:2;
 }
 .lista_nav li .a_nav{
@@ -174,7 +176,6 @@ footer div a{
     margin: 1rem;
 }
 .lista_redes{
-    list-style: none;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
@@ -186,8 +187,24 @@ footer div a{
     margin: 1rem;
     background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
     font-weight: bolder;
-    /* background-attachment: fixed; */
 }
+/* PAGINA UBICACION */
+.ubicacion_mapa iframe{
+    width: 25rem;
+    height: 25rem;
+}
+.ubicacion_mapa{
+    display: flex;
+    justify-content: center;
+}
+.lista_info_contacto{
+    font-size: 1.5rem;
+    margin: 2rem;
+    padding: 1rem;
+    border-style:ridge;
+    line-height:2;
+}
+
 
 /* VISTA TABLET */
 @media (min-width: 768px){
@@ -271,6 +288,16 @@ footer div a{
     .section_sobre_nosotros{
         margin: 2.5rem;
     }
+    /* PAGINA UBICACION */
+    .ubicacion_mapa iframe{
+        width: 50rem;
+        height: 30rem;
+    }
+    .lista_info_contacto{
+        font-size: 2rem;
+        margin: 2rem;
+        padding: 2rem;
+    }
 }
 /* VISTA DESKTOP */
 @media (min-width: 1024px){
@@ -338,4 +365,20 @@ footer div a{
     .section_sobre_nosotros{
         margin: 4rem;
     }
+    /* PAGINA UBICACION */
+    .ubicacion_mapa iframe{
+        width: 80rem;
+        height: 40rem;
+        margin-bottom: 3rem;
+    }
+    .lista_info_contacto{
+        font-size: 3rem;
+        margin-bottom: 5rem;
+        width: 90rem;
+        background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+    }
+    .info_contacto{
+        display: flex;
+        justify-content: center;
+    }    
 }
