@@ -30,7 +30,7 @@
         </div>
         <nav>
             <div class="container_lista_nav">
-                <ul class="lista_nav t_center">
+                <ul class="lista_nav text-center p-0">
                     <li><a class="a_nav font_initial" href="../index.html">Inicio</a></li>
                     <li><a class="a_nav font_initial" href="./sobreNosotros.html">Sobre Nosotros</a></li>
                     <li><a class="a_nav font_initial" href="./productos.html">Productos</a></li>
@@ -40,59 +40,84 @@
             </div>
         </nav>
     </header>
-    <div class="container_h2">
+    <div class="container-fluid text-center">
         <h2 class="titulo_introduccion">Contactate Con Nosotros</h2>
     </div>
-    <section class="lista_info">
-        <ul>
+    <section class="container-sm">
+        <ul class="list-unstyled text-center container-sm border-top border-bottom p-3 section_informacion_contacto">
             <li><i class="fa-solid fa-phone"></i> Teléfono: 11-5701-0729</li>
             <li><i class="fa-brands fa-instagram"></i> Seguinos en <a href="https://www.instagram.com/alfhamacetas/" target="_blank">Intagram</a></li>
             <li><i class="fa-brands fa-facebook"></i> Seguinos en <a href="https://www.facebook.com/Alfhamacetas-100426069349418" target="_blank">Facebook</a></li>
         </ul>
     </section>
-    <p class="p_formulario">O completa el siguiente formulario y nos contactaremos con usted a la brevedad:</p>
-    <form method="get">
-        <ul>
-            <li>
-                <label for="nombre"><i class="fa-solid fa-user"></i> Nombre:</label>
-                <input type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre" required>
-            </li>
-            <li>
-                <label for="email"><i class="fa-regular fa-envelope"></i> Email:</label>
-                <input type="email" name="email" id="email" placeholder="Ingresa tu mail" required>
-            </li>
-            <li>
-                <label for="telefono"><i class="fa-solid fa-phone"></i> Teléfono:</label>
-                <input type="number" name="telefono" id="telefono" placeholder="Ingresa tu teléfono" required>
-            </li>
-            <li>
-                <label for="motivo de tu consulta">Motivo de tu consulta:</label>
-                <select name="motivo de tu consulta" id="motivo de tu consulta">
-                    <option value="Contacto">Contacto</option>
-                    <option value="Reclamo">Reclamo</option>
-                    <option value="Pedido">Pedido</option>
-                </select>
-            </li>
-            <li>
-                <label for="msg"><i class="fa-regular fa-comment"></i> Mensaje:</label>
-                <textarea id="msg" name="user_message" placeholder="Ingresa tu mensaje aquí" required></textarea>
-            </li>
-            <li class="button">
-                <input type="submit" value="Enviar">
-                <input type="reset" value="Resetar">
-            </li>
-        </ul>
-    </form>
+    <div class="container-fluid">
+        <p class="text-center fw-semibold my-5 p_introduccion_formulario">O completa el siguiente formulario y nos contactaremos con usted a la brevedad:</p>
+    </div>
+    <section>
+        <div class="container contenedor_formulario"> 
+            <form class="m-2 container-fluid">
+                <div class="row mb-3 align-items-center">
+                        <label for="nombre" class="col-4 col-form-label text-center" ><i class="fa-solid fa-user"></i> Nombre:</label>
+                    <div class="col-8 col-md-6">
+                        <input type="text" id="nombre" class="form-control input_text font_initial" placeholder="Ingresa tu nombre" required>
+                    </div>
+                </div>
+                <div class="row mb-3 align-items-center">
+                    <label for="email" class="col-4 col-form-label text-center"><i class="fa-regular fa-envelope"></i> Email:</label>
+                    <div class="col-8 col-md-6 col-lg-6">
+                        <input type="email" id="email" class="form-control input_text font_initial" placeholder="Ingresa tu mail" required>
+                    </div>
+                </div>
+                <div class="row mb-3 align-items-center">
+                    <label for="telefono" class="col-4 col-form-label text-center"><i class="fa-solid fa-phone"></i> Teléfono:</label>
+                    <div class="col-8 col-md-6">
+                        <input type="number" id="telefono" class="form-control input_text font_initial" placeholder="Ingresa tu teléfono" required>
+                    </div>
+                </div>
+                <div class="row mb-3 align-items-center">
+                    <label class="text-center col-4" for="motivo de tu consulta">Motivo de tu consulta:</label>
+                    <div class="col-8 col-md-6">
+                        <select class="container-fluid input_consulta input_text font_initial" name="motivo de tu consulta" id="motivo de tu consulta">
+                            <option class="font_initial" value="Contacto">Contacto</option>
+                            <option class="font_initial" value="Reclamo">Reclamo</option>
+                            <option class="font_initial" value="Pedido">Pedido</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row mb-4">
+                    <label for="mensaje" class="col-4 col-form-label text-center d-flex align-items-center justify-content-center"><i class="fa-regular fa-comment"></i> Mensaje:</label>
+                    <div class="col-8 col-md-6">
+                        <textarea id="mensaje" name="user_message" class="form-control input_text font_initial" placeholder="Ingresa tu mensaje aquí" required></textarea>
+                    </div>
+                </div>
+                <div class="row mb-4">
+                    <div class="col-12 d-flex justify-content-center">
+                        <div class="form-check ">
+                            <input type="checkbox" class="form-check-input" id="checkTerms" required>
+                            <label for="checkTerms" class="form-check-label">Acepto los terminos y condiciones</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center font_initial">
+                    <button type="submit" value="Enviar" class="col-3 button_formulario  m-3">Enviar</button>  
+                    <button type="reset" value="Resetear" class="col-3 button_formulario m-3">Resetear</button>
+                </div>    
+            </form>
+        </div>
+    </section>
+
     <footer>
-        <p><i class="fa-solid fa-location-dot"></i> Ubicación: Manuel Ugarte 3069, CABA</p>
-        <p><i class="fa-solid fa-phone"></i> Teléfono: 11-5701-0729</p>
-        <div>
-            <a href="https://www.instagram.com/alfhamacetas/" target="_blank">
-                <img class="red_social" src="../img/Instagram.webp" alt="instagram">
-            </a>
-            <a href="https://www.facebook.com/Alfhamacetas-100426069349418" target="_blank"> 
-                <img class="red_social" src="../img/facebook.webp" alt="facebook">
-            </a>
+        <p class="font_initial"><i class="fa-solid fa-location-dot"></i> Ubicación: Manuel Ugarte 3069, CABA</p>
+        <p class="font_initial"><i class="fa-solid fa-phone"></i> Teléfono: 11-5701-0729</p>
+        <div class="container_redes">
+            <ul class="lista_redes">
+                <li><a href="https://www.instagram.com/alfhamacetas/" target="_blank">
+                    <img class="red_social" src="../img/Instagram.webp" alt="instagram"></a>
+                </li>
+                <li><a href="https://www.facebook.com/Alfhamacetas-100426069349418" target="_blank"> 
+                    <img class="red_social" src="../img/facebook.webp" alt="facebook"></a>
+                </li>
+            </ul>
         </div>
     </footer>
     <!-- JavaScript Bundle with Popper -->
