@@ -19,6 +19,9 @@ html{
 .font_underline{
 text-decoration: underline;
 }
+.list_style_none{
+    list-style: none;
+}
 #body_grid{
     display: grid;
     grid-template-columns: auto;
@@ -44,7 +47,6 @@ text-decoration: underline;
     border-bottom: 2px solid rgba(29,113,168,0.58);
 }
 .lista_nav li{
-    list-style: none;
     line-height:2;
 }
 .lista_nav li .a_nav{
@@ -174,7 +176,6 @@ footer div a{
     margin: 1rem;
 }
 .lista_redes{
-    list-style: none;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
