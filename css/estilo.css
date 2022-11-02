@@ -241,6 +241,16 @@ textarea{
 .button_formulario:hover::before {
     width: 9em;
 }
+/* PAGINA PRODUCTOS */
+.img_galeria_productos img{
+    height: 25rem;
+    width: 25rem;
+    border-radius: 2rem;
+    margin-bottom:1.5rem;
+}
+.img_galeria_productos{
+    margin-top: 3rem;
+}
 /* VISTA TABLET */
 @media (min-width: 768px){
     .container_nav_grid{
@@ -342,6 +352,15 @@ textarea{
     .button_formulario{
         width: 7em;
         height: 2em;
+    }
+    /* PAGINA PRODUCTOS */
+    .img_galeria_productos img{
+        height: 30rem;
+        width: 30rem;
+        margin-bottom:3rem;
+    }
+    .img_galeria_productos{
+        margin-top: 5rem;
     }    
 }
 /* VISTA DESKTOP */
@@ -430,4 +449,8 @@ textarea{
     .input_consulta{
         font-size: medium;
     }
+    /* PAGINA PRODUCTOS */
+    .img_galeria_productos{
+        margin-top: 5rem;
+    } 
 }
