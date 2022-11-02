@@ -252,6 +252,22 @@ textarea{
 .img_galeria_productos{
     margin-top: 3rem;
 }
+/* PAGINA UBICACION */
+.ubicacion_mapa iframe{
+    width: 25rem;
+    height: 25rem;
+}
+.ubicacion_mapa{
+    display: flex;
+    justify-content: center;
+}
+.lista_info_contacto{
+    font-size: 1.5rem;
+    margin: 2rem;
+    padding: 1rem;
+    border-style:ridge;
+    line-height:2;
+}
 /* VISTA TABLET */
 @media (min-width: 768px){
     .container_nav_grid{
@@ -362,7 +378,17 @@ textarea{
     }
     .img_galeria_productos{
         margin-top: 5rem;
-    }    
+    }
+    /* PAGINA UBICACION */
+    .ubicacion_mapa iframe{
+        width: 50rem;
+        height: 30rem;
+    }
+    .lista_info_contacto{
+        font-size: 2rem;
+        margin: 2rem;
+        padding: 2rem;
+    }        
 }
 /* VISTA DESKTOP */
 @media (min-width: 1024px){
@@ -399,7 +425,6 @@ textarea{
         font-size: 2.8rem;
         margin: 4rem 3rem;
     }
-
     #titulo_productos{
         font-size: 4rem;
     }
@@ -453,5 +478,21 @@ textarea{
     /* PAGINA PRODUCTOS */
     .img_galeria_productos{
         margin-top: 5rem;
-    } 
+    }
+    /* PAGINA UBICACION */
+    .ubicacion_mapa iframe{
+        width: 80rem;
+        height: 40rem;
+        margin-bottom: 3rem;
+    }
+    .lista_info_contacto{
+        font-size: 3rem;
+        margin-bottom: 5rem;
+        width: 90rem;
+        background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+    }
+    .info_contacto{
+        display: flex;
+        justify-content: center;
+    }         
 }
