@@ -405,6 +405,7 @@ textarea{
     .lista_nav .a_nav:hover { 
         background-color: #521bb9;
         color: #70def1;
+        transition: all 0.8s;
     }
     .bienvenida{
         display: flex;
