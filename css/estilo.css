@@ -194,7 +194,8 @@ footer div a{
     display: flex;
     justify-content: center;
     margin: 1rem;
-}
+}/* Fin Hover button ver todos */
+
 /* PAGINA SOBRE NOSOTROS */
 .section_sobre_nosotros{
     border-style:ridge;
@@ -240,7 +241,7 @@ textarea{
     box-shadow: 6px 6px 12px #c5c5c5,
                 -6px -6px 12px #ffffff;
 }
-.button_formulario::before {
+.button_formulario::before{
     content: '';
     width: 0;
     height: 3em;
@@ -253,7 +254,7 @@ textarea{
     display: block;
     z-index: -1;
 }
-.button_formulario:hover::before {
+.button_formulario:hover::before{
     width: 9em;
 }
 /* PAGINA PRODUCTOS */
@@ -416,7 +417,7 @@ textarea{
         width: 80rem;
         height: 50rem;
     }
-    .lista_nav .a_nav:hover { 
+    .lista_nav .a_nav:hover{ 
         background-color: #521bb9;
         color: #70def1;
         transition: all 0.8s;
@@ -498,7 +499,7 @@ textarea{
         height: 3px;
         transition: all 0.3s ease-in-out;
     }
-    .introduccion_a_productos:hover {
+    .introduccion_a_productos:hover{
         background-position: 0;
     }
     .introduccion_a_productos:hover::before{
@@ -519,7 +520,7 @@ textarea{
         overflow: hidden;
         border-radius: 5px
     }
-    .a_productos_enlace::before {
+    .a_productos_enlace::before{
         content: '';
         display: block;
         position: absolute;
@@ -532,10 +533,10 @@ textarea{
         background: linear-gradient(90deg, #17A589 20%, #3498DB 100%);
         transition: 0.2s;
     }
-    .a_productos_enlace .label {
+    .a_productos_enlace .label{
         position: relative;
     }
-    .a_productos_enlace .icon {
+    .a_productos_enlace .icon{
         display: flex;
         align-items: center;
         justify-content: center;
@@ -547,10 +548,10 @@ textarea{
         opacity: 0;
         transition: 0.4s;
     }
-    .a_productos_enlace:hover::before {
+    .a_productos_enlace:hover::before{
         height: 100%;
     }
-    .a_productos_enlace:hover .icon {
+    .a_productos_enlace:hover .icon{
         top: 0;
         opacity: 1;
     }/* Fin hover button */
@@ -599,6 +600,4 @@ textarea{
         display: flex;
         justify-content: center;
     }
-
-
 }
