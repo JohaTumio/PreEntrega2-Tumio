@@ -128,14 +128,14 @@ h1{
     font-weight: bold;
 }
 .productos{
-    height: 15rem;
-    width: 15rem;
+    height: 18rem;
+    width: 18rem;
     border-radius: 2rem;
 }
 .img_productos{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
     justify-items: center;
     row-gap: 0.5rem;
 }
@@ -325,8 +325,8 @@ textarea{
         margin-bottom: 3rem;
     }
     .img_productos{
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 1fr);
         row-gap: 1rem;
     }
     .a_productos{
@@ -436,6 +436,10 @@ textarea{
     .img_productos{
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: auto;
+    }
+    .productos{
+        height: 15rem;
+        width: 15rem;
     }
     .a_productos{
         font-size: 3rem;
