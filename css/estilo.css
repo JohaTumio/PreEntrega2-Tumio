@@ -211,7 +211,7 @@ footer div a{
 }
 .input_consulta{
     border-color: #D7DBDD;
-    color:#5D6D7E
+    color:#5D6D7E;
 }
 textarea{
     resize: none;
@@ -518,7 +518,7 @@ textarea{
         color: #fff;
         text-transform: uppercase;
         overflow: hidden;
-        border-radius: 5px
+        border-radius: 5px;
     }
     .a_productos_enlace::before{
         content: '';
@@ -571,7 +571,6 @@ textarea{
         font-size: 1.8rem;
     }    
     .input_text{
-        height: 3.8rem;
         font-size:larger;
     }
     ::placeholder{
